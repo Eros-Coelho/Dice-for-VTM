@@ -17,7 +17,8 @@ public class Main {
 
         System.out.print("Please enter any bonuses (if none, type 0): ");
         int bonus = scanner.nextInt();
-        scanner.nextLine();  // consume the remaining newline
+        scanner.nextLine();
+        // consume the remaining newline
 
         int die1 = 0;
 
@@ -39,7 +40,7 @@ public class Main {
         int critical = 0;
 
         if (die1 > 3 || die2 > 3) {
-            System.out.print("Specialty applies?: ");
+            System.out.print("Specialty applies? (yes or no): ");
             String specialty = scanner.nextLine().toLowerCase();
 
             switch (specialty) {
